@@ -11,7 +11,7 @@
         <img src="./images/img1.jpeg" alt="imgs" id="images">
     <div class="btn_container">
         <img src="./images/arrow_left.png" alt="img" onclick="prev()">
-        <img src="./images/arrow_right.png" alt="img">
+        <img src="./images/arrow_right.png" alt="img" onclick=" next()">
     </div>
 
     </div>
@@ -39,6 +39,17 @@ function prev(){
    const imgelement = document.getElementById('images');
    imgelement.src = images[imgindex]
 
+}
+
+function next(){
+    if(imgindex==images.length-1){
+        imgindex=0;
+    }
+    else{
+        imgindex++;
+    }
+    const imgelement = document.getElementById('images');
+    imgelement.src = images[imgindex]
 }
 
 

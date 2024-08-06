@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image gallery</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <img src="./images/img1.jpeg" alt="imgs" id="images">
+    <div class="btn_container">
+        <img src="./images/arrow_left.png" alt="img" onclick="prev()">
+        <img src="./images/arrow_right.png" alt="img">
+    </div>
+
+    </div>
+
+
+   <script>
+    const images = [
+        "./images/img1.jpeg",
+        "./images/img2.jpeg",
+        "./images/img3.jpeg",
+        "./images/img4.jpeg",
+        "./images/img5.jpeg"
+        ]
+
+    let imgindex = 0;
+
+function prev(){
+   if(imgindex==0){
+    imgindex=images.length-1;
+   }
+   else{
+    imgindex--;
+   }
+
+   const imgelement = document.getElementById('images');
+   imgelement.src = images[imgindex]
+
+}
+
+
+
+   </script>
 </body>
 </html>

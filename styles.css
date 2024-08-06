@@ -1,0 +1,36 @@
+#images{
+    display: block;
+    margin: 20px auto;
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid black; */
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+.btn_container>img{
+    height: 50px;
+    cursor: pointer;
+}
+.container{
+
+    height: 400px;
+    margin: 80px auto;
+    width: 500px;
+    /* border: 1px solid black; */
+    position: relative;
+   
+}
+.btn_container{
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    
+}
